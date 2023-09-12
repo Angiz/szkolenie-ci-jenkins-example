@@ -1,7 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        label "workerA"
+    }
     triggers {
-        cron('* * * * *')
+        cron('H/60 * * * *')
     }
 
     tools {
