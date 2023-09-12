@@ -18,7 +18,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Get some code from a GitHub repository
-                git branch: 'master', url: 'https://github.com/Angiz/Sii_JavaFinal.git'
+                git branch: 'main', url: 'https://github.com/Angiz/szkolenie-ci-jenkins-example.git'
             }
         }
         stage('Build') {
